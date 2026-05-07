@@ -8,8 +8,13 @@ export default function Upload({ onData }) {
 
   function handleFile(file) {
     if (!file) return
+    setError('')
     if (!file.name.endsWith('.csv')) {
       setError('Solo se aceptan archivos .csv de Netflix')
+      return
+    }
+    if (file.size > 50 * 1024 * 1024) {
+      setError('El archivo es demasiado grande (máx. 50 MB)')
       return
     }
     const reader = new FileReader()
