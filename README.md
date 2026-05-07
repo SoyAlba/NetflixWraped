@@ -1,16 +1,48 @@
-# React + Vite
+# 🎬 Netflix Wrapped
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descubre tus estadísticas de visionado de Netflix al estilo Spotify Wrapped. Sube tu historial en CSV y obtén un resumen animado de tu año en pantalla.
 
-Currently, two official plugins are available:
+## ¿Cómo funciona?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Ve a [netflix.com/viewingactivity](https://www.netflix.com/viewingactivity)
+2. Descarga tu historial como CSV (`NetflixViewingHistory.csv`)
+3. Súbelo a la app y disfruta tu resumen
 
-## React Compiler
+## Qué incluye
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Serie favorita** — la que más episodios has visto
+- **Top 6 series** — ranking con barras animadas
+- **Mayor maratón** — tu récord de episodios en un solo día
+- **Racha más larga** — días consecutivos con Netflix
+- **Actividad mensual** — gráfico de barras por mes
+- **Perfil de visionado** — tu personalidad como espectador
 
-## Expanding the ESLint configuration
+## Instalación y uso local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Abre `http://localhost:5173` en el navegador.
+
+## Comandos
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo con HMR |
+| `npm run build` | Build de producción |
+| `npm run preview` | Vista previa del build |
+| `npm run lint` | Linter ESLint |
+
+## Tecnologías
+
+- [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [Framer Motion](https://www.framer.com/motion/) — animaciones
+- [Recharts](https://recharts.org/) — gráficos
+- [PapaParse](https://www.papaparse.com/) — parseo de CSV
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Privacidad
+
+Todo el procesamiento ocurre en tu navegador. Ningún dato se envía a ningún servidor.
