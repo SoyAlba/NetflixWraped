@@ -91,7 +91,7 @@ export default function BingeSlide({ stats }) {
           <div style={{ width: 1, background: '#222' }} />
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 22, fontWeight: 800, color: '#fff', lineHeight: 1.2 }}>
-              {biggestBingeShows[0]}
+              {biggestBingeShows[0] ?? '—'}
             </div>
             <div style={{ color: '#555', fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginTop: 4 }}>serie</div>
           </div>

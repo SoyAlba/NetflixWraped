@@ -158,7 +158,7 @@ export default function Wrapped({ stats, onReset }) {
       <div
         style={{
           position: 'fixed', top: 20, right: 24,
-          color: '#333', fontSize: 12, zIndex: 100,
+          color: '#888', fontSize: 12, zIndex: 100,
           fontVariantNumeric: 'tabular-nums',
         }}
       >

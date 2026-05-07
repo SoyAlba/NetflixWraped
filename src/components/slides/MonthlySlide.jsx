@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function MonthlySlide({ stats }) {
   const { monthlyData } = stats
+  if (!monthlyData || monthlyData.length === 0) return null
   const max = Math.max(...monthlyData.map(m => m.count))
   const peakMonth = monthlyData.find(m => m.count === max)
 
